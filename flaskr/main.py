@@ -1,5 +1,3 @@
-# from crypt import methods
-# from turtle import title
 from flaskr import app
 from flask import render_template, request, redirect, url_for
 import sqlite3
