@@ -1,5 +1,3 @@
-# from crypt import methods
-# from turtle import title
 from flaskr import app
 from flask import render_template, request, redirect, url_for
 import sqlite3
@@ -14,7 +12,7 @@ def index():
     books = []
     for row in db_books:
         books.append({'title': row[0], 'price': row[1], 'arrival_day': row[2]})
-    
+
     return render_template(
         'index.html',
         books=books
